@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@extends('include.header');
+    <head>
+
+        @extends('include.header')
+    
+    </head>
 
 <body>
 
@@ -17,8 +21,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ route('dashboard') }}">Admin : {{ Auth::user()->name }}</a>
+                <a class="navbar-brand" href="{{ route('dashboard') }}">Bakti Jaya</a>
                 
+            </div>
+            <div style="position: relative; top: 10px;" class="nav navbar-top-links navbar-right">
+                {{ Auth::user()->name }}&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
             <!-- /.navbar-header -->
 
@@ -33,7 +40,11 @@
         </nav>
 
         <div id="page-wrapper">
-            
+             <table>
+                 <tr>
+                     <td>dawda</td>
+                 </tr>
+             </table>
         </div>
         <!-- /#page-wrapper -->
 
@@ -42,24 +53,8 @@
 
     <!-- jQuery -->
     
-	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	
-	<script src="bower_components/sammy/lib/min/sammy-latest.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
-	
-
-
-
-
-
-    <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
-	
+	@extends('include.footer')
 	
 
 </body>
