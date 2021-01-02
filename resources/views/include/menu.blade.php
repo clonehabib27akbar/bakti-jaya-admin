@@ -12,10 +12,10 @@
                         <a href="#/flot">Sekolah</a>
                     </li>
                     <li>
-                        <a href="#/flot">Siswa</a>
+                        <a href="{{ route('siswa') }}">Siswa</a>
                     </li>
                     <li>
-                        <a href="#/morris">Guru</a>
+                        <a href="{{ route('guru') }}">Guru</a>
                     </li>
                     <li>
                         <a href="#/morris">Mata Pelajaran</a>
